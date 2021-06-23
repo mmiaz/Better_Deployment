@@ -15,3 +15,13 @@ we need to pass local image
 curl -X POST http://0.0.0.0:5000/async_api  -F imagefile=@xxxxxxx.jpg
 ```
 
+## fastapi.py
+As FastAPI offers swagger UI and embeddd asyncio functionality, we are hoping to compare performance testing of it with that of flask api.
+
+### Usage
+Make us of below command to start the service and go to route **/docs** to check documantation and test it out. We can later use Jmeter to do performance testing.
+ 
+```shell
+uvicorn main:app
+uvicorn main:app --reload
+```
